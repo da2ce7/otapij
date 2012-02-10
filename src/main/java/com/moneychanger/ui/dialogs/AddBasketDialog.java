@@ -95,11 +95,11 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.Basket;
-import com.wrapper.core.NYM;
-import com.wrapper.core.jni.otapi;
-import com.wrapper.core.util.OTAPI_Func;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.Basket;
+import com.moneychanger.core.NYM;
+import org.ot.wrapper.jni.otapi;
+import com.moneychanger.core.util.OTAPI_Func;
+import com.moneychanger.core.util.Utility;
 import com.moneychanger.ui.MainPage;
 import com.moneychanger.ui.model.BasketTableModel;
 import java.util.Map;

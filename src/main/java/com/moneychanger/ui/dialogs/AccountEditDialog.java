@@ -103,10 +103,10 @@ AK+ZirdWhhoHeWR1tAkN
 
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.Account;
-import com.wrapper.core.Contract;
-import com.wrapper.core.OpenTransactionAccount;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.Account;
+import com.moneychanger.core.Contract;
+import com.moneychanger.core.OpenTransactionAccount;
+import com.moneychanger.core.util.Utility;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -197,7 +197,7 @@ public class AccountEditDialog extends javax.swing.JDialog {
                 return;
             }
             Account account = null;
-            Class obj = Class.forName("com.wrapper.core." + type);
+            Class obj = Class.forName("com.moneychanger.core." + type);
             account = (Account) obj.newInstance();
             boolean status = account.editLabel(accountID, jTextField1.getText());
             if (status) {

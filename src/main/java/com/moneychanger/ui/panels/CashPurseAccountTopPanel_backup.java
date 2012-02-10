@@ -102,7 +102,7 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui.panels;
 
-import com.wrapper.core.dataobjects.CashPurseDetails;
+import com.moneychanger.core.dataobjects.CashPurseDetails;
 
 /**
  *

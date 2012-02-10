@@ -103,8 +103,8 @@ AK+ZirdWhhoHeWR1tAkN
 
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.OpenTransactionAccount;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.OpenTransactionAccount;
+import com.moneychanger.core.util.Utility;
 import com.moneychanger.ui.MainPage;
 import com.moneychanger.ui.custom.ClipboardClass;
 import java.awt.Cursor;

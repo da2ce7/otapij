@@ -86,8 +86,8 @@ package com.moneychanger.ui;
 
 import com.moneychanger.ui.custom.CustomMenu;
 import com.moneychanger.ui.dialogs.PathDialog;
-import com.wrapper.core.util.Configuration;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.util.Configuration;
+import com.moneychanger.core.util.Utility;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.imageio.ImageIO;
@@ -406,7 +406,7 @@ public class Settings extends javax.swing.JFrame {
              //UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
                                     // UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
 
-  /*com.wrapper.ui.ProgressBar progressBar = new com.wrapper.ui.ProgressBar();
+  /*com.moneychanger.ui.ProgressBar progressBar = new com.moneychanger.ui.ProgressBar();
                         new Thread(progressBar).start();
                         progressBar.setVisible(true);
                         progressBar.pack();*/

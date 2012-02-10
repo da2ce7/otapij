@@ -96,7 +96,7 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui.custom;
 
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.util.Utility;
 import com.moneychanger.ui.Settings;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

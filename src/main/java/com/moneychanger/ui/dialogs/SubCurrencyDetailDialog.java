@@ -94,8 +94,8 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.Basket;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.Basket;
+import com.moneychanger.core.util.Utility;
 import java.util.List;
 import java.util.Map;
 

@@ -102,7 +102,7 @@ package com.moneychanger.ui.dialogs;
 import java.util.*;
 import java.io.*;
 
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.util.Utility;
 import com.moneychanger.ui.Load;
 import com.moneychanger.ui.Settings;
 import javax.swing.DefaultListModel;

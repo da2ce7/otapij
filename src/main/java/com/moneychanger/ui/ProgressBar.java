@@ -2,7 +2,7 @@ package com.moneychanger.ui;
 
 import com.moneychanger.app.LaunchMoneychanger;
 import chrriis.dj.nativeswing.swtimpl.EventDispatchUtils;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.util.Utility;
 import java.awt.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
