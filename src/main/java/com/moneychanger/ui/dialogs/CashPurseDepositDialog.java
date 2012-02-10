@@ -99,10 +99,10 @@ AK+ZirdWhhoHeWR1tAkN
 
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.CashPurseAccount;
-import com.wrapper.core.OpenTransactionAccount;
-import com.wrapper.core.dataobjects.CashPurseDetails;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.CashPurseAccount;
+import com.moneychanger.core.OpenTransactionAccount;
+import com.moneychanger.core.dataobjects.CashPurseDetails;
+import com.moneychanger.core.util.Utility;
 import com.moneychanger.ui.MainPage;
 import com.moneychanger.ui.panels.CashPurseAccountBottomPanel;
 import com.moneychanger.ui.panels.CashPurseAccountTopPanel;

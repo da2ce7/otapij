@@ -100,23 +100,23 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui;
 //Recurring, Deed/Title, Escrow, Ripple, Settings, Credits
-import com.wrapper.core.Account;
-import com.wrapper.core.Basket;
-import com.wrapper.core.Contract;
-import com.wrapper.core.Market;
-import com.wrapper.core.NYM;
-import com.wrapper.core.OpenTransactionAccount;
-import com.wrapper.core.RippleAccount;
-import com.wrapper.core.dataobjects.BitcoinDetails;
-import com.wrapper.core.dataobjects.CashPurseDetails;
-import com.wrapper.core.dataobjects.MarketDetails;
-import com.wrapper.core.dataobjects.MarketTicker;
-import com.wrapper.core.dataobjects.NymOfferDetails;
-import com.wrapper.core.dataobjects.OTDetails;
-import com.wrapper.core.datastore.StorageHelper;
-import com.wrapper.core.util.ComboObject;
-import com.wrapper.core.util.Configuration;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.Account;
+import com.moneychanger.core.Basket;
+import com.moneychanger.core.Contract;
+import com.moneychanger.core.Market;
+import com.moneychanger.core.NYM;
+import com.moneychanger.core.OpenTransactionAccount;
+import com.moneychanger.core.RippleAccount;
+import com.moneychanger.core.dataobjects.BitcoinDetails;
+import com.moneychanger.core.dataobjects.CashPurseDetails;
+import com.moneychanger.core.dataobjects.MarketDetails;
+import com.moneychanger.core.dataobjects.MarketTicker;
+import com.moneychanger.core.dataobjects.NymOfferDetails;
+import com.moneychanger.core.dataobjects.OTDetails;
+import com.moneychanger.core.datastore.StorageHelper;
+import com.moneychanger.core.util.ComboObject;
+import com.moneychanger.core.util.Configuration;
+import com.moneychanger.core.util.Utility;
 import com.moneychanger.ui.dialogs.AccountAdditionDialog;
 import com.moneychanger.ui.dialogs.AccountEditDialog;
 import com.moneychanger.ui.dialogs.AddBasketDialog;
@@ -4097,7 +4097,7 @@ public class MainPage extends javax.swing.JFrame {
                                 try {
                                     topLayout.show(jPanel8, type + "TopPanel");
                                     bottomlayout.show(jPanel15, type + "BottomPanel");
-                                    Class obj = Class.forName("com.wrapper.core." + type);
+                                    Class obj = Class.forName("com.moneychanger.core." + type);
 
 
                                     Account account = (Account) obj.newInstance();
@@ -4159,7 +4159,7 @@ public class MainPage extends javax.swing.JFrame {
 
                 if ("OpenTransactionAccount".equals(Account.allAccounts[i]) || "CashPurseAccount".equals(Account.allAccounts[i])) {
 
-                    Class obj = Class.forName("com.wrapper.core." + Account.allAccounts[i]);
+                    Class obj = Class.forName("com.moneychanger.core." + Account.allAccounts[i]);
                     account = (Account) obj.newInstance();
                     try {
                         account.loadAccount("ALL", "ALL", "ALL");
@@ -4167,11 +4167,11 @@ public class MainPage extends javax.swing.JFrame {
                         Logger.getLogger(MainPage.class.getName()).log(Level.SEVERE, null, ex);
                     }
 
-                    Class obj1 = Class.forName("com.wrapper.ui.panels." + Account.allAccounts[i] + "TopPanel");
+                    Class obj1 = Class.forName("com.moneychanger.ui.panels." + Account.allAccounts[i] + "TopPanel");
                     JPanel topPanel = (JPanel) obj1.newInstance();
                     jPanel8.add(topPanel, Account.allAccounts[i] + "TopPanel");
 
-                    Class obj2 = Class.forName("com.wrapper.ui.panels." + Account.allAccounts[i] + "BottomPanel");
+                    Class obj2 = Class.forName("com.moneychanger.ui.panels." + Account.allAccounts[i] + "BottomPanel");
                     JPanel bottomPanel = (JPanel) obj2.newInstance();
 
                     jPanel15.add(bottomPanel, Account.allAccounts[i] + "BottomPanel");
@@ -4214,7 +4214,7 @@ public class MainPage extends javax.swing.JFrame {
                             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                             try {
                                 try {
-                                    account = (Account) (Class.forName("com.wrapper.core." + type)).newInstance();
+                                    account = (Account) (Class.forName("com.moneychanger.core." + type)).newInstance();
                                     account.setServerID(serverID);
                                 } catch (InstantiationException ex) {
                                     Logger.getLogger(MainPage.class.getName()).log(Level.SEVERE, null, ex);
@@ -4289,7 +4289,7 @@ public class MainPage extends javax.swing.JFrame {
                                     try {
                                         topLayout.show(jPanel27, type + "TopPanel");
                                         bottomlayout.show(jPanel28, type + "BottomPanel");
-                                        Class obj = Class.forName("com.wrapper.core." + type);
+                                        Class obj = Class.forName("com.moneychanger.core." + type);
 
                                         Account account = (Account) obj.newInstance();
                                         account.setServerID((String) jTable4.getModel().getValueAt(jTable4.getSelectedRow(), 2));
@@ -4332,11 +4332,11 @@ public class MainPage extends javax.swing.JFrame {
                     if (!"OpenTransactionAccount".equals(Account.allAccounts[i]) && !"CashPurseAccount".equals(Account.allAccounts[i])) {
                         System.out.println("initOtherTabloop --- Account.allAccounts[i]:" + Account.allAccounts[i]);
 
-                        Class obj1 = Class.forName("com.wrapper.ui.panels." + Account.allAccounts[i] + "TopPanel");
+                        Class obj1 = Class.forName("com.moneychanger.ui.panels." + Account.allAccounts[i] + "TopPanel");
                         JPanel topPanel = (JPanel) obj1.newInstance();
                         jPanel27.add(topPanel, Account.allAccounts[i] + "TopPanel");
 
-                        Class obj2 = Class.forName("com.wrapper.ui.panels." + Account.allAccounts[i] + "BottomPanel");
+                        Class obj2 = Class.forName("com.moneychanger.ui.panels." + Account.allAccounts[i] + "BottomPanel");
                         JPanel bottomPanel = (JPanel) obj2.newInstance();
                         // Setting the account account to retrieve in bottom panel
 
@@ -4416,7 +4416,7 @@ public class MainPage extends javax.swing.JFrame {
         for (int i = 0; i < Account.allAccounts.length; i++) {
             try {
                 if ("OpenTransactionAccount".equals(Account.allAccounts[i]) || "CashPurseAccount".equals(Account.allAccounts[i])) {
-                    Class obj = Class.forName("com.wrapper.core." + Account.allAccounts[i]);
+                    Class obj = Class.forName("com.moneychanger.core." + Account.allAccounts[i]);
 
                     account = (Account) obj.newInstance();
 
@@ -4441,7 +4441,7 @@ public class MainPage extends javax.swing.JFrame {
         for (int i = 0; i < Account.allAccounts.length; i++) {
             try {
                 if ("OpenTransactionAccount".equals(Account.allAccounts[i]) || "CashPurseAccount".equals(Account.allAccounts[i])) {
-                    Class obj = Class.forName("com.wrapper.core." + Account.allAccounts[i]);
+                    Class obj = Class.forName("com.moneychanger.core." + Account.allAccounts[i]);
 
                     account = (Account) obj.newInstance();
 
@@ -4475,7 +4475,7 @@ public class MainPage extends javax.swing.JFrame {
         for (int i = 0; i < Account.allAccounts.length; i++) {
             try {
                 if (!"OpenTransactionAccount".equals(Account.allAccounts[i]) && !"CashPurseAccount".equals(Account.allAccounts[i])) {
-                    Class obj = Class.forName("com.wrapper.core." + Account.allAccounts[i]);
+                    Class obj = Class.forName("com.moneychanger.core." + Account.allAccounts[i]);
 
                     account = (Account) obj.newInstance();
                     if (i == 0) {

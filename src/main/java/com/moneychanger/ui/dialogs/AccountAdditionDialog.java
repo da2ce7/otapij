@@ -98,9 +98,9 @@ AK+ZirdWhhoHeWR1tAkN
 
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.OpenTransactionAccount;
-import com.wrapper.core.util.ComboObject;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.OpenTransactionAccount;
+import com.moneychanger.core.util.ComboObject;
+import com.moneychanger.core.util.Utility;
 import java.awt.Frame;
 
 /**

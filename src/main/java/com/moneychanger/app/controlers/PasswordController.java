@@ -7,7 +7,7 @@ package com.moneychanger.app.controlers;
 import com.moneychanger.app.dialogs.OTPasswordDialog;
 import com.moneychanger.app.main.Concierge;
 import com.moneychanger.app.main.helpers.GetSetClipboard;
-import com.wrapper.core.util.Configuration;
+import com.moneychanger.core.util.Configuration;
 import java.awt.event.ActionEvent;
 import java.util.EnumMap;
 import java.util.Map;

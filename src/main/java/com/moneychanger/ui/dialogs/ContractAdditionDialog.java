@@ -102,8 +102,8 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.Contract;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.Contract;
+import com.moneychanger.core.util.Utility;
 import java.io.File;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;

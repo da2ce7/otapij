@@ -102,8 +102,8 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui.panels;
 
-import com.wrapper.core.NYM;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.NYM;
+import com.moneychanger.core.util.Utility;
 import java.awt.Color;
 import java.util.Map;
 

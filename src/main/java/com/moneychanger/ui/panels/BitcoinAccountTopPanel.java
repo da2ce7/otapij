@@ -100,8 +100,8 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui.panels;
 
-import com.wrapper.core.BitcoinAccount;
-import com.wrapper.core.dataobjects.BitcoinDetails;
+import com.moneychanger.core.BitcoinAccount;
+import com.moneychanger.core.dataobjects.BitcoinDetails;
 import com.moneychanger.ui.MainPage;
 import com.moneychanger.ui.dialogs.BitcoinCreateAddressDialog;
 import com.moneychanger.ui.dialogs.BitcoinSendFundDialog;

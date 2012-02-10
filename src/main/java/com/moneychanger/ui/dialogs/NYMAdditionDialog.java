@@ -103,9 +103,9 @@ AK+ZirdWhhoHeWR1tAkN
 
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.Contract;
-import com.wrapper.core.NYM;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.Contract;
+import com.moneychanger.core.NYM;
+import com.moneychanger.core.util.Utility;
 import java.util.Map;
 import javax.swing.JOptionPane;
 

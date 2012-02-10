@@ -100,8 +100,8 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui.panels;
 
-import com.wrapper.core.OpenTransactionAccount;
-import com.wrapper.core.dataobjects.OTDetails;
+import com.moneychanger.core.OpenTransactionAccount;
+import com.moneychanger.core.dataobjects.OTDetails;
 import com.moneychanger.ui.dialogs.DepositCashDialog;
 import com.moneychanger.ui.dialogs.DepositChequeDialog;
 import com.moneychanger.ui.dialogs.ExchangeBasketDialog;
@@ -109,7 +109,7 @@ import com.moneychanger.ui.dialogs.OTWriteCheque;
 import com.moneychanger.ui.dialogs.SendTransferDialog;
 import com.moneychanger.ui.dialogs.WithdrawCashDialog;
 import com.moneychanger.ui.dialogs.WithdrawVoucherDialog;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.util.Utility;
 import java.awt.Cursor;
 import java.util.logging.Level;
 import java.util.logging.Logger;

@@ -65,11 +65,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>net.sf.swinglib</groupId>
-            <artifactId>Swinglib</artifactId>
-            <version>0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
             <groupId>org.netbeans.external</groupId>
             <artifactId>appframework-1.0.3</artifactId>
             <version>RELEASE701</version>
@@ -112,6 +107,11 @@
             <groupId>org.netbeans.external</groupId>
             <artifactId>swing-worker-1.1</artifactId>
             <version>RELEASE701</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.swinglib</groupId>
+            <artifactId>Swinglib</artifactId>
+            <version>0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>

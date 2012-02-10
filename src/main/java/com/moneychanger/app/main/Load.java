@@ -4,14 +4,15 @@
  */
 package com.moneychanger.app.main;
 
-import com.wrapper.core.jni.JavaCallback;
-import com.wrapper.core.jni.OTCallback;
-import com.wrapper.core.jni.OTCaller;
-import com.wrapper.core.jni.otapi;
-import com.wrapper.core.util.Configuration;
-import com.wrapper.core.util.Utility;
+
+import com.moneychanger.core.util.Configuration;
+import com.moneychanger.core.util.JavaCallback;
+import com.moneychanger.core.util.Utility;
 import java.io.File;
 import java.io.IOException;
+import org.ot.wrapper.jni.OTCallback;
+import org.ot.wrapper.jni.OTCaller;
+import org.ot.wrapper.jni.otapi;
 
 /**
  *

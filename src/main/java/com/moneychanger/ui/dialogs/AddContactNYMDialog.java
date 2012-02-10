@@ -92,8 +92,8 @@ AK+ZirdWhhoHeWR1tAkN
 
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.datastore.AddressBookHelper;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.datastore.AddressBookHelper;
+import com.moneychanger.core.util.Utility;
 import javax.swing.JOptionPane;
 
 public class AddContactNYMDialog extends javax.swing.JDialog {

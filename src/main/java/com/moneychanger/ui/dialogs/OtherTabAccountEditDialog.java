@@ -101,8 +101,8 @@ AK+ZirdWhhoHeWR1tAkN
 
 package com.moneychanger.ui.dialogs;
 
-import com.wrapper.core.Account;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.Account;
+import com.moneychanger.core.util.Utility;
 import com.moneychanger.ui.MainPage;
 import javax.swing.JOptionPane;
 
@@ -193,7 +193,7 @@ public class OtherTabAccountEditDialog extends javax.swing.JDialog {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
             Account account = null;
-            Class obj = Class.forName("com.wrapper.core." + type);
+            Class obj = Class.forName("com.moneychanger.core." + type);
             account = (Account) obj.newInstance();
             boolean status = account.editLabel(accountID, jTextField1.getText());
             if (status) {

@@ -100,9 +100,9 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.moneychanger.ui.panels;
 
-import com.wrapper.core.OpenTransactionAccount;
-import com.wrapper.core.dataobjects.OTDetails;
-import com.wrapper.core.util.Utility;
+import com.moneychanger.core.OpenTransactionAccount;
+import com.moneychanger.core.dataobjects.OTDetails;
+import com.moneychanger.core.util.Utility;
 import com.moneychanger.ui.MainPage;
 import com.moneychanger.ui.dialogs.OTNotes;
 import com.moneychanger.ui.model.OTInboxTableModel;

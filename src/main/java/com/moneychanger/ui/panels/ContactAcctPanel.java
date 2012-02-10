@@ -101,8 +101,8 @@ AK+ZirdWhhoHeWR1tAkN
 
 package com.moneychanger.ui.panels;
 
-import com.wrapper.core.dataobjects.ContactAcctDetails;
-import com.wrapper.core.datastore.AddressBookHelper;
+import com.moneychanger.core.dataobjects.ContactAcctDetails;
+import com.moneychanger.core.datastore.AddressBookHelper;
 import javax.swing.JOptionPane;
 
 /**
