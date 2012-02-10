@@ -216,7 +216,7 @@ public class BitcoinAccountBottomPanel extends javax.swing.JPanel {
         });
         jScrollPane14.setViewportView(jTable7);
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(com.moneychanger.app.LaunchMoneychanger.class).getContext().getResourceMap(BitcoinAccountBottomPanel.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(com.moneychanger.app.main.Start.class).getContext().getResourceMap(BitcoinAccountBottomPanel.class);
         jTabbedPane1.addTab(resourceMap.getString("jScrollPane14.TabConstraints.tabTitle"), jScrollPane14); // NOI18N
 
         jButton1.setText(resourceMap.getString("jButton1.text")); // NOI18N

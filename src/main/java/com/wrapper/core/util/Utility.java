@@ -94,6 +94,7 @@ AK+ZirdWhhoHeWR1tAkN
  */
 package com.wrapper.core.util;
 
+import com.moneychanger.app.main.Load;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -113,7 +114,6 @@ import com.wrapper.core.jni.TradeListMarket;
 import com.wrapper.core.jni.TradeListNym;
 import com.wrapper.core.jni.WalletData;
 import com.wrapper.core.jni.otapi;
-import com.moneychanger.ui.Load;
 import com.moneychanger.ui.MainPage;
 import com.moneychanger.ui.model.AccountTableModel;
 import com.moneychanger.ui.panels.OpenTransactionAccountBottomPanel;
