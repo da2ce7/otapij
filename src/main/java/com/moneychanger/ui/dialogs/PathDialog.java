@@ -6,20 +6,20 @@ Hash: SHA256
  *
  *  Open Transactions:
  *       Financial Cryptography and Digital Cash
- *       Library, Protocol, API, Server, and GUI 
- *    
+ *       Library, Protocol, API, Server, and GUI
+ *
  *    	 -- Anonymous Numbered Accounts.
  *    	 -- Untraceable Digital Cash.
  *    	 -- Triple-Signed Receipts.
  *    	 -- Cheques, Vouchers, Transfers, Inboxes.
  *    	 -- Basket Currencies, Markets, Payment Plans.
  *    	 -- Signed, XML, Ricardian-style Contracts.
- *    
+ *
  *  Copyright (C) 2010-2012 by "Fellow Traveler" (A pseudonym)
  *
  *  EMAIL:
  *  FellowTraveler@rayservers.net
- *  
+ *
  *  FINGERPRINT:
  *  9DD5 90EB 9292 4B48 0484  7910 0308 00ED F951 BB8E
  *
@@ -31,10 +31,10 @@ Hash: SHA256
  *
  *  WEBSITE:
  *  http://www.OpenTransactions.org/
- *    
+ *
  *  Components and licensing:
  *   -- Moneychanger..A Java client GUI.....LICENSE:.....GPLv3
- *   -- OTLib.........A class library.......LICENSE:...LAGPLv3 
+ *   -- OTLib.........A class library.......LICENSE:...LAGPLv3
  *   -- OT-API........A client API..........LICENSE:...LAGPLv3
  *   -- testwallet....Command-line client...LICENSE:...LAGPLv3
  *   -- OT-Server.....Server Application....LICENSE:....AGPLv3
@@ -61,7 +61,7 @@ Hash: SHA256
  *   software license, please contact FellowTraveler.
  *   (Unfortunately many will run anonymously and untraceably,
  *   so who could really stop them?)
- *   
+ *
  *   DISCLAIMER:
  *   This program is distributed in the hope that it will be
  *   useful, but WITHOUT ANY WARRANTY; without even the implied
@@ -97,14 +97,14 @@ AK+ZirdWhhoHeWR1tAkN
  *
  * Created on 4 Apr, 2011, 8:04:41 PM
  */
-package com.wrapper.ui.dialogs;
+package com.moneychanger.ui.dialogs;
 
 import java.util.*;
 import java.io.*;
 
 import com.wrapper.core.util.Utility;
-import com.wrapper.ui.Load;
-import com.wrapper.ui.Settings;
+import com.moneychanger.ui.Load;
+import com.moneychanger.ui.Settings;
 import javax.swing.DefaultListModel;
 import javax.swing.JFileChooser;
 
@@ -207,17 +207,17 @@ public class PathDialog extends javax.swing.JDialog {
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             // file = contractFileChooser.getSelectedFile();
             //This is where a real application would open the file.
-    
+
 //            File[] thePaths         = pathFolderChooser.getSelectedFiles();
 //            List<File> listPaths    = Arrays.asList(thePaths);
-//            
+//
 //            for(File file : listPaths) {
 //                javaPaths.addPath(file.getPath());
 //                System.out.print("PathDialog.jButton_AddActionPerformed: ADDED TO PATH: " + file.getPath());
 //            }
-            
+
             javaPaths.addPath(pathFolderChooser.getSelectedFile().getPath());
-            
+
         } else {
             System.out.println("Cancelled");
         }

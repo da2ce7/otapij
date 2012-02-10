@@ -1,6 +1,6 @@
-package com.wrapper.ui;
+package com.moneychanger.ui;
 
-import app.ApplicationLauncher;
+import com.moneychanger.app.ApplicationLauncher;
 import chrriis.dj.nativeswing.swtimpl.EventDispatchUtils;
 import com.wrapper.core.util.Utility;
 import java.awt.*;
@@ -57,7 +57,7 @@ public class ProgressBar
         progress.setPreferredSize(new Dimension(300, 20));
         progress.setMinimum(0);
         progress.setMaximum(MAX);
- 
+
         progress.setBounds(20, 35, 260, 20);
         topPanel.add(progress);
 
@@ -133,7 +133,7 @@ public class ProgressBar
                } catch (Exception ex) {
             Logger.getLogger(ProgressBar.class.getName()).log(Level.SEVERE, null, ex);
         }*/
-            
+
 
             } while (!stop);
         } catch (Exception ex) {

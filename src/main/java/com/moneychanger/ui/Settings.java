@@ -82,13 +82,13 @@
  *
  * Created on 4 Apr, 2011, 9:20:06 AM
  */
-package com.wrapper.ui;
+package com.moneychanger.ui;
 
 import com.wrapper.core.util.Configuration;
 import com.wrapper.core.util.Utility;
-import com.wrapper.ui.custom.CustomMenu;
-import com.wrapper.ui.dialogs.PathDialog;
-import com.wrapper.ui.panels.OpenTransactionAccountTopPanel;
+import com.moneychanger.ui.custom.CustomMenu;
+import com.moneychanger.ui.dialogs.PathDialog;
+import com.moneychanger.ui.panels.OpenTransactionAccountTopPanel;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -112,12 +112,12 @@ public class Settings extends javax.swing.JFrame {
 
     private JFileChooser dataFolderChooser;
     private JFileChooser imageChooser;
-    
+
     private boolean m_bSettingsLoaded;
     private boolean m_bComponentsInitialized;
-    
+
     private static Load.JavaPaths javaPaths;
-    
+
     private void loadSettings() {
         if (false == m_bSettingsLoaded) {
             javaPaths = new Load.JavaPaths();
@@ -217,7 +217,7 @@ public class Settings extends javax.swing.JFrame {
         jLabel_JavaPath1 = new javax.swing.JLabel();
         jButton_DataFolder1 = new javax.swing.JButton();
         jMenuBar_Setting = new javax.swing.JMenuBar();
-        jMenu1 = new com.wrapper.ui.custom.CustomMenu("Look & Feel");
+        jMenu1 = new com.moneychanger.ui.custom.CustomMenu("Look & Feel");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance().getContext().getResourceMap(Settings.class);
@@ -502,7 +502,7 @@ public class Settings extends javax.swing.JFrame {
 //                    /*if (!success) {
 //                    JOptionPane.showMessageDialog(this, "Invalid Data Folder", "Initialization Error", JOptionPane.ERROR_MESSAGE);
 //                    return;
-//                    
+//
 //                    }*/
 //
 //                    OTCaller g_theCaller = new OTCaller();

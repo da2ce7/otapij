@@ -6,20 +6,20 @@ Hash: SHA256
  *
  *  Open Transactions:
  *       Financial Cryptography and Digital Cash
- *       Library, Protocol, API, Server, and GUI 
- *    
+ *       Library, Protocol, API, Server, and GUI
+ *
  *    	 -- Anonymous Numbered Accounts.
  *    	 -- Untraceable Digital Cash.
  *    	 -- Triple-Signed Receipts.
  *    	 -- Cheques, Vouchers, Transfers, Inboxes.
  *    	 -- Basket Currencies, Markets, Payment Plans.
  *    	 -- Signed, XML, Ricardian-style Contracts.
- *    
+ *
  *  Copyright (C) 2010-2012 by "Fellow Traveler" (A pseudonym)
  *
  *  EMAIL:
  *  FellowTraveler@rayservers.net
- *  
+ *
  *  FINGERPRINT:
  *  9DD5 90EB 9292 4B48 0484  7910 0308 00ED F951 BB8E
  *
@@ -31,10 +31,10 @@ Hash: SHA256
  *
  *  WEBSITE:
  *  http://www.OpenTransactions.org/
- *    
+ *
  *  Components and licensing:
  *   -- Moneychanger..A Java client GUI.....LICENSE:.....GPLv3
- *   -- OTLib.........A class library.......LICENSE:...LAGPLv3 
+ *   -- OTLib.........A class library.......LICENSE:...LAGPLv3
  *   -- OT-API........A client API..........LICENSE:...LAGPLv3
  *   -- testwallet....Command-line client...LICENSE:...LAGPLv3
  *   -- OT-Server.....Server Application....LICENSE:....AGPLv3
@@ -61,14 +61,14 @@ Hash: SHA256
  *   software license, please contact FellowTraveler.
  *   (Unfortunately many will run anonymously and untraceably,
  *   so who could really stop them?)
- *   
+ *
  *   DISCLAIMER:
  *   This program is distributed in the hope that it will be
  *   useful, but WITHOUT ANY WARRANTY; without even the implied
  *   warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *   PURPOSE.  See the GNU General Public License for more
  *   details.
- 
+
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (Darwin)
 
@@ -88,17 +88,17 @@ AK+ZirdWhhoHeWR1tAkN
 -----END PGP SIGNATURE-----
  **************************************************************/
 
-package com.wrapper.ui.dialogs;
+package com.moneychanger.ui.dialogs;
 
 import com.wrapper.core.dataobjects.ContactDetails;
 import com.wrapper.core.datastore.AddressBookHelper;
 import com.wrapper.core.util.Utility;
-import com.wrapper.ui.model.ContactDetailsTableModel;
-import com.wrapper.ui.model.ContactNymTableModel;
-import com.wrapper.ui.model.ContactTableModel;
-import com.wrapper.ui.panels.BlankPanel;
-import com.wrapper.ui.panels.ContactAcctPanel;
-import com.wrapper.ui.panels.ContactNymPanel;
+import com.moneychanger.ui.model.ContactDetailsTableModel;
+import com.moneychanger.ui.model.ContactNymTableModel;
+import com.moneychanger.ui.model.ContactTableModel;
+import com.moneychanger.ui.panels.BlankPanel;
+import com.moneychanger.ui.panels.ContactAcctPanel;
+import com.moneychanger.ui.panels.ContactNymPanel;
 import java.awt.CardLayout;
 import java.util.List;
 import javax.swing.BorderFactory;
@@ -143,14 +143,14 @@ public class AddressBookDialog extends javax.swing.JDialog {
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton1 = new javax.swing.JRadioButton();
         jScrollPane12 = new javax.swing.JScrollPane();
-        jTable5 = new com.wrapper.ui.custom.CustomTable();
+        jTable5 = new com.moneychanger.ui.custom.CustomTable();
         jPanel16 = new javax.swing.JPanel();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jSeparator6 = new javax.swing.JSeparator();
         jScrollPane13 = new javax.swing.JScrollPane();
-        jTable6 = new com.wrapper.ui.custom.CustomTable();
+        jTable6 = new com.moneychanger.ui.custom.CustomTable();
         jSeparator7 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -172,7 +172,7 @@ public class AddressBookDialog extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(app.ApplicationLauncher.class).getContext().getResourceMap(AddressBookDialog.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(com.moneychanger.app.ApplicationLauncher.class).getContext().getResourceMap(AddressBookDialog.class);
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(resourceMap.getString("jPanel1.border.title"))); // NOI18N
         jPanel1.setName("jPanel1"); // NOI18N
 
@@ -212,7 +212,7 @@ public class AddressBookDialog extends javax.swing.JDialog {
 
         jScrollPane12.setName("jScrollPane12"); // NOI18N
 
-        jTable5.setModel(new com.wrapper.ui.model.ContactTableModel());
+        jTable5.setModel(new com.moneychanger.ui.model.ContactTableModel());
         jTable5.setName("jTable5"); // NOI18N
         jTable5.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTable5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -281,7 +281,7 @@ public class AddressBookDialog extends javax.swing.JDialog {
 
         jScrollPane13.setName("jScrollPane13"); // NOI18N
 
-        jTable6.setModel(new com.wrapper.ui.model.ContactDetailsTableModel());
+        jTable6.setModel(new com.moneychanger.ui.model.ContactDetailsTableModel());
         jTable6.setName("jTable6"); // NOI18N
         jTable6.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTable6.addMouseListener(new java.awt.event.MouseAdapter() {

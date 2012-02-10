@@ -6,20 +6,20 @@ Hash: SHA256
  *
  *  Open Transactions:
  *       Financial Cryptography and Digital Cash
- *       Library, Protocol, API, Server, and GUI 
- *    
+ *       Library, Protocol, API, Server, and GUI
+ *
  *    	 -- Anonymous Numbered Accounts.
  *    	 -- Untraceable Digital Cash.
  *    	 -- Triple-Signed Receipts.
  *    	 -- Cheques, Vouchers, Transfers, Inboxes.
  *    	 -- Basket Currencies, Markets, Payment Plans.
  *    	 -- Signed, XML, Ricardian-style Contracts.
- *    
+ *
  *  Copyright (C) 2010-2012 by "Fellow Traveler" (A pseudonym)
  *
  *  EMAIL:
  *  FellowTraveler@rayservers.net
- *  
+ *
  *  FINGERPRINT:
  *  9DD5 90EB 9292 4B48 0484  7910 0308 00ED F951 BB8E
  *
@@ -31,10 +31,10 @@ Hash: SHA256
  *
  *  WEBSITE:
  *  http://www.OpenTransactions.org/
- *    
+ *
  *  Components and licensing:
  *   -- Moneychanger..A Java client GUI.....LICENSE:.....GPLv3
- *   -- OTLib.........A class library.......LICENSE:...LAGPLv3 
+ *   -- OTLib.........A class library.......LICENSE:...LAGPLv3
  *   -- OT-API........A client API..........LICENSE:...LAGPLv3
  *   -- testwallet....Command-line client...LICENSE:...LAGPLv3
  *   -- OT-Server.....Server Application....LICENSE:....AGPLv3
@@ -61,14 +61,14 @@ Hash: SHA256
  *   software license, please contact FellowTraveler.
  *   (Unfortunately many will run anonymously and untraceably,
  *   so who could really stop them?)
- *   
+ *
  *   DISCLAIMER:
  *   This program is distributed in the hope that it will be
  *   useful, but WITHOUT ANY WARRANTY; without even the implied
  *   warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *   PURPOSE.  See the GNU General Public License for more
  *   details.
- 
+
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (Darwin)
 
@@ -98,13 +98,13 @@ AK+ZirdWhhoHeWR1tAkN
  *
  * Created on 18 Mar, 2011, 7:27:38 AM
  */
-package com.wrapper.ui.panels;
+package com.moneychanger.ui.panels;
 
 import com.wrapper.core.BitcoinAccount;
 import com.wrapper.core.dataobjects.BitcoinDetails;
-import com.wrapper.ui.MainPage;
-import com.wrapper.ui.dialogs.BitcoinCreateAddressDialog;
-import com.wrapper.ui.dialogs.BitcoinSendFundDialog;
+import com.moneychanger.ui.MainPage;
+import com.moneychanger.ui.dialogs.BitcoinCreateAddressDialog;
+import com.moneychanger.ui.dialogs.BitcoinSendFundDialog;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 
@@ -146,7 +146,7 @@ public class BitcoinAccountTopPanel extends javax.swing.JPanel {
 
         setName("Form"); // NOI18N
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(app.ApplicationLauncher.class).getContext().getResourceMap(BitcoinAccountTopPanel.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(com.moneychanger.app.ApplicationLauncher.class).getContext().getResourceMap(BitcoinAccountTopPanel.class);
         jLabel7.setText(resourceMap.getString("jLabel7.text")); // NOI18N
         jLabel7.setName("jLabel7"); // NOI18N
 
@@ -355,7 +355,7 @@ public class BitcoinAccountTopPanel extends javax.swing.JPanel {
             System.out.println("jTextField1"+jTextField1);
             jTextField1.setText(details.getBalance());
             jTextField2.setText(details.getAccount());
-         
+
             jTextField5.setText(details.getAddress());
             serverID = details.getServerID();
             jTextField3.setText(String.valueOf(details.getCurrentBlockNumber()));
@@ -364,7 +364,7 @@ public class BitcoinAccountTopPanel extends javax.swing.JPanel {
 
     public static void setValues(String newAddress, String label) {
         jTextField5.setText(newAddress);
-     
+
     }
 
     public static void setBalance(String balance) {
@@ -375,7 +375,7 @@ public class BitcoinAccountTopPanel extends javax.swing.JPanel {
 
     public static void clearPanel() {
         if (jTextField5 != null && jTextField1 != null && jTextField3 != null && jTextField2 != null) {
-          
+
             jTextField5.setText("");
             jTextField1.setText("");
             jTextField2.setText("");

@@ -6,20 +6,20 @@ Hash: SHA256
  *
  *  Open Transactions:
  *       Financial Cryptography and Digital Cash
- *       Library, Protocol, API, Server, and GUI 
- *    
+ *       Library, Protocol, API, Server, and GUI
+ *
  *    	 -- Anonymous Numbered Accounts.
  *    	 -- Untraceable Digital Cash.
  *    	 -- Triple-Signed Receipts.
  *    	 -- Cheques, Vouchers, Transfers, Inboxes.
  *    	 -- Basket Currencies, Markets, Payment Plans.
  *    	 -- Signed, XML, Ricardian-style Contracts.
- *    
+ *
  *  Copyright (C) 2010-2012 by "Fellow Traveler" (A pseudonym)
  *
  *  EMAIL:
  *  FellowTraveler@rayservers.net
- *  
+ *
  *  FINGERPRINT:
  *  9DD5 90EB 9292 4B48 0484  7910 0308 00ED F951 BB8E
  *
@@ -31,10 +31,10 @@ Hash: SHA256
  *
  *  WEBSITE:
  *  http://www.OpenTransactions.org/
- *    
+ *
  *  Components and licensing:
  *   -- Moneychanger..A Java client GUI.....LICENSE:.....GPLv3
- *   -- OTLib.........A class library.......LICENSE:...LAGPLv3 
+ *   -- OTLib.........A class library.......LICENSE:...LAGPLv3
  *   -- OT-API........A client API..........LICENSE:...LAGPLv3
  *   -- testwallet....Command-line client...LICENSE:...LAGPLv3
  *   -- OT-Server.....Server Application....LICENSE:....AGPLv3
@@ -61,7 +61,7 @@ Hash: SHA256
  *   software license, please contact FellowTraveler.
  *   (Unfortunately many will run anonymously and untraceably,
  *   so who could really stop them?)
- *   
+ *
  *   DISCLAIMER:
  *   This program is distributed in the hope that it will be
  *   useful, but WITHOUT ANY WARRANTY; without even the implied
@@ -113,11 +113,11 @@ import com.wrapper.core.jni.TradeListMarket;
 import com.wrapper.core.jni.TradeListNym;
 import com.wrapper.core.jni.WalletData;
 import com.wrapper.core.jni.otapi;
-import com.wrapper.ui.Load;
-import com.wrapper.ui.MainPage;
-import com.wrapper.ui.model.AccountTableModel;
-import com.wrapper.ui.panels.OpenTransactionAccountBottomPanel;
-import com.wrapper.ui.panels.OpenTransactionAccountTopPanel;
+import com.moneychanger.ui.Load;
+import com.moneychanger.ui.MainPage;
+import com.moneychanger.ui.model.AccountTableModel;
+import com.moneychanger.ui.panels.OpenTransactionAccountBottomPanel;
+import com.moneychanger.ui.panels.OpenTransactionAccountTopPanel;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Toolkit;
@@ -427,7 +427,7 @@ public class Utility {
     }
 
     public static int getAndProcessNymbox(String serverID, String nymID) {
-        // ------------------------------------------  
+        // ------------------------------------------
         if (Utility.getNymboxLowLevel(serverID, nymID)) {
             if (Utility.insureHaveAllBoxReceipts(serverID, nymID, nymID, 0)) // nBoxType = 0 aka nymbox
             {
@@ -525,7 +525,7 @@ public class Utility {
 
         String ledger = null;
         switch (nBoxType) {
-            // The "Verify" versions of these load functions actually tries to 
+            // The "Verify" versions of these load functions actually tries to
             // load all the box receipts. Therefore I use the "NoVerify" version,
             // which stops at loading the abbreviations. That way I can iterate
             // through them and download the box receipt for each, as necessary.
@@ -553,7 +553,7 @@ public class Utility {
         // itself. That's because this function's whole point is to find out what
         // the box receipts are, and download them from the server. No point trying
         // to load them before that time, when I know it will fail.
-        // 
+        //
         if ((null == ledger) || (ledger.length() < 10) || (0 == otapi.OT_API_VerifySignature(nymID, ledger))) {
             System.out.println("Utility.insureHaveAllBoxReceipts(): Unable to load or verify signature on ledger. (Failure.)");
             return false;
@@ -661,7 +661,7 @@ public class Utility {
                 {
                     // Resync success!
                     if (true == Utility.getRequestNumber(serverID, nymID)) {
-                        --i;    // Give this guy an extra round.     
+                        --i;    // Give this guy an extra round.
 //                          --nFailures; // getRequest WORKED, so we set the failures counter back one.
                         // I commented this out because we only get past this spot if success. Therefore
                         // if the next call to OT_API_getTransactionNumber() (at the top of this loop)
@@ -681,7 +681,7 @@ public class Utility {
                 // yet that the getTransactionNumber() is STILL FAILING after that.
                 // The likely culprit is that I've reached my limit of #s. Meaning
                 // the server already put my limit into my nymbox already, and I
-                // can never resync unless I get and process all those #s out of my 
+                // can never resync unless I get and process all those #s out of my
                 // Nymbox... And also I can't get any more numbers probably, until I
                 // use some of those new ones up first, that are sitting in my Nymbox.)
                 else if (2 == nFailures) // second failure
@@ -695,7 +695,7 @@ public class Utility {
                         // if the third failure happens, it might STILL be a form of success. The caller might
                         // STILL determine that I now have enough numbers to keep going, and he then continues
                         // on to his next function call as if everything is a success.
-                        --i;    // Give this guy an extra round.                         
+                        --i;    // Give this guy an extra round.
                         bSuccess = true;
                         continue;
                     } else {
@@ -741,7 +741,7 @@ public class Utility {
             }
 
             return b2;
-            // ----------------------------------           
+            // ----------------------------------
         } // (else already logs above.)
 
         return false;
@@ -969,11 +969,11 @@ public class Utility {
             component.addItem(new ComboObject(((String[]) data.get(key))[0]));
         }
 
-        if (component instanceof com.wrapper.ui.custom.SteppedComboBox) {
+        if (component instanceof com.moneychanger.ui.custom.SteppedComboBox) {
 
             Dimension d = component.getPreferredSize();
             component.setPreferredSize(new Dimension(100, d.height));
-            ((com.wrapper.ui.custom.SteppedComboBox) component).setPopupWidth(d.width);
+            ((com.moneychanger.ui.custom.SteppedComboBox) component).setPopupWidth(d.width);
         }
     }
 
@@ -992,11 +992,11 @@ public class Utility {
             component.addItem(new ComboObject(((String[]) data.get(key))[0]));
         }
 
-        if (component instanceof com.wrapper.ui.custom.SteppedComboBox) {
+        if (component instanceof com.moneychanger.ui.custom.SteppedComboBox) {
 
             Dimension d = component.getPreferredSize();
             component.setPreferredSize(new Dimension(100, d.height));
-            ((com.wrapper.ui.custom.SteppedComboBox) component).setPopupWidth(d.width);
+            ((com.moneychanger.ui.custom.SteppedComboBox) component).setPopupWidth(d.width);
         }
     }
 
@@ -1095,9 +1095,9 @@ public class Utility {
     // Grabs the "Account", which is the intermediary file containing the current balance, verified against
     // last signed receipt. Server must have your signature on the last balance agreement plus, if applicable,
     // any inbox receipts (box receipts), also with your signature, in order to justify the current balance.
-    // Any inbox receipts, further, are only valid if they each contain a transaction number that was previously 
+    // Any inbox receipts, further, are only valid if they each contain a transaction number that was previously
     // already signed out to you.
-    // (As you can see, the "account" is not a list of transactions, as per the classical understanding in 
+    // (As you can see, the "account" is not a list of transactions, as per the classical understanding in
     // double-entry accounting, but instead it's just a signed balance agreement, plus any as-yet-unclosed
     // transactions that have cleared since that balance was last signed, and are still waiting in the inbox
     // for the next balance agreement to be signed when they can be removed.)
@@ -1147,7 +1147,7 @@ public class Utility {
         // Now let's make sure we have all the box receipts for this inbox.
         // (They will be needed when it is used for something.)
         //
-        if (bInbox && !Utility.insureHaveAllBoxReceipts(serverID, nymID, // <===== 
+        if (bInbox && !Utility.insureHaveAllBoxReceipts(serverID, nymID, // <=====
                 accountID, 1)) // nBoxType = 1 aka inbox
         {
             System.out.println("getInboxAccount: getInbox succeeded, but then insureHaveAllBoxReceipts failed. (I give up.)");
@@ -1248,7 +1248,7 @@ public class Utility {
     public static boolean saveImagePath(String imagePath) {
 
         boolean status = false;
-        
+
         if (Load.IsOTInitialized())
         {
             StringMap stringMap = null;  // we are about to create this object
@@ -1268,8 +1268,8 @@ public class Utility {
             }
         }
         else {
-            System.out.println("Utility.getImagePath():  Skipping. (OT not initialized yet.)");    
-        }        
+            System.out.println("Utility.getImagePath():  Skipping. (OT not initialized yet.)");
+        }
         return status;
     }
 
@@ -1292,7 +1292,7 @@ public class Utility {
                 System.out.println("getImagePath, storable:" + storable);
 
                 if (storable == null) {
-                    System.out.println("Utility.getImagePath, failed querying storable from local storage.");                
+                    System.out.println("Utility.getImagePath, failed querying storable from local storage.");
                     return strDefault;
                 }
 
@@ -1301,22 +1301,22 @@ public class Utility {
                 System.out.println("getImagePath, stringMap:" + stringMap);
 
                 if (stringMap == null) {
-                    System.out.println("Utility.getImagePath, failed casting stringmap from storable.");                
+                    System.out.println("Utility.getImagePath, failed casting stringmap from storable.");
                     return strDefault;
                 }
 
                 strImagePath = stringMap.GetValue("ImagePath");
-            } 
+            }
             else
             {
-                System.out.println("Utility.getImagePath():  File does not exist: (OT_MAIN_PATH)/moneychanger/settings.dat");    
+                System.out.println("Utility.getImagePath():  File does not exist: (OT_MAIN_PATH)/moneychanger/settings.dat");
             }
 
             if ((null == strImagePath) || (strImagePath.length() < 1))
-                strImagePath = strDefault; 
+                strImagePath = strDefault;
         }
         else {
-            System.out.println("Utility.getImagePath():  Skipping. (OT not initialized yet.)");    
+            System.out.println("Utility.getImagePath():  Skipping. (OT not initialized yet.)");
         }
         return strImagePath;
     }

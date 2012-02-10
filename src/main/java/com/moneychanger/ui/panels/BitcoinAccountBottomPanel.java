@@ -6,20 +6,20 @@ Hash: SHA256
  *
  *  Open Transactions:
  *       Financial Cryptography and Digital Cash
- *       Library, Protocol, API, Server, and GUI 
- *    
+ *       Library, Protocol, API, Server, and GUI
+ *
  *    	 -- Anonymous Numbered Accounts.
  *    	 -- Untraceable Digital Cash.
  *    	 -- Triple-Signed Receipts.
  *    	 -- Cheques, Vouchers, Transfers, Inboxes.
  *    	 -- Basket Currencies, Markets, Payment Plans.
  *    	 -- Signed, XML, Ricardian-style Contracts.
- *    
+ *
  *  Copyright (C) 2010-2012 by "Fellow Traveler" (A pseudonym)
  *
  *  EMAIL:
  *  FellowTraveler@rayservers.net
- *  
+ *
  *  FINGERPRINT:
  *  9DD5 90EB 9292 4B48 0484  7910 0308 00ED F951 BB8E
  *
@@ -31,10 +31,10 @@ Hash: SHA256
  *
  *  WEBSITE:
  *  http://www.OpenTransactions.org/
- *    
+ *
  *  Components and licensing:
  *   -- Moneychanger..A Java client GUI.....LICENSE:.....GPLv3
- *   -- OTLib.........A class library.......LICENSE:...LAGPLv3 
+ *   -- OTLib.........A class library.......LICENSE:...LAGPLv3
  *   -- OT-API........A client API..........LICENSE:...LAGPLv3
  *   -- testwallet....Command-line client...LICENSE:...LAGPLv3
  *   -- OT-Server.....Server Application....LICENSE:....AGPLv3
@@ -61,14 +61,14 @@ Hash: SHA256
  *   software license, please contact FellowTraveler.
  *   (Unfortunately many will run anonymously and untraceably,
  *   so who could really stop them?)
- *   
+ *
  *   DISCLAIMER:
  *   This program is distributed in the hope that it will be
  *   useful, but WITHOUT ANY WARRANTY; without even the implied
  *   warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *   PURPOSE.  See the GNU General Public License for more
  *   details.
- 
+
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (Darwin)
 
@@ -88,14 +88,14 @@ AK+ZirdWhhoHeWR1tAkN
 -----END PGP SIGNATURE-----
  **************************************************************/
 
-package com.wrapper.ui.panels;
+package com.moneychanger.ui.panels;
 
 import com.wrapper.core.BitcoinAccount;
 import com.wrapper.core.dataobjects.BitcoinDetails;
-import com.wrapper.ui.dialogs.BitcoinTrnDetailsDialog;
-import com.wrapper.ui.model.BitcoinReceivedTableModel;
-import com.wrapper.ui.model.BitcoinReceivingAddrTableModel;
-import com.wrapper.ui.model.BitcoinSentTableModel;
+import com.moneychanger.ui.dialogs.BitcoinTrnDetailsDialog;
+import com.moneychanger.ui.model.BitcoinReceivedTableModel;
+import com.moneychanger.ui.model.BitcoinReceivingAddrTableModel;
+import com.moneychanger.ui.model.BitcoinSentTableModel;
 import java.util.Map;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
@@ -130,12 +130,12 @@ public class BitcoinAccountBottomPanel extends javax.swing.JPanel {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane12 = new javax.swing.JScrollPane();
-        jTable5 = new com.wrapper.ui.custom.CustomTable();
+        jTable5 = new com.moneychanger.ui.custom.CustomTable();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane13 = new javax.swing.JScrollPane();
-        jTable6 = new com.wrapper.ui.custom.CustomTable();
+        jTable6 = new com.moneychanger.ui.custom.CustomTable();
         jScrollPane14 = new javax.swing.JScrollPane();
-        jTable7 = new com.wrapper.ui.custom.CustomTable();
+        jTable7 = new com.moneychanger.ui.custom.CustomTable();
         jButton1 = new javax.swing.JButton();
 
         setName("Form"); // NOI18N
@@ -151,7 +151,7 @@ public class BitcoinAccountBottomPanel extends javax.swing.JPanel {
 
         jScrollPane12.setName("jScrollPane12"); // NOI18N
 
-        jTable5.setModel(new com.wrapper.ui.model.BitcoinSentTableModel());
+        jTable5.setModel(new com.moneychanger.ui.model.BitcoinSentTableModel());
         jTable5.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
         jTable5.setName("jTable5"); // NOI18N
         jTable5.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
@@ -179,7 +179,7 @@ public class BitcoinAccountBottomPanel extends javax.swing.JPanel {
 
         jScrollPane13.setName("jScrollPane13"); // NOI18N
 
-        jTable6.setModel(new com.wrapper.ui.model.BitcoinReceivedTableModel());
+        jTable6.setModel(new com.moneychanger.ui.model.BitcoinReceivedTableModel());
         jTable6.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
         jTable6.setName("jTable6"); // NOI18N
         jTable6.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
@@ -205,7 +205,7 @@ public class BitcoinAccountBottomPanel extends javax.swing.JPanel {
 
         jScrollPane14.setName("jScrollPane14"); // NOI18N
 
-        jTable7.setModel(new com.wrapper.ui.model.BitcoinReceivingAddrTableModel());
+        jTable7.setModel(new com.moneychanger.ui.model.BitcoinReceivingAddrTableModel());
         jTable7.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
         jTable7.setName("jTable7"); // NOI18N
         jTable7.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
@@ -216,7 +216,7 @@ public class BitcoinAccountBottomPanel extends javax.swing.JPanel {
         });
         jScrollPane14.setViewportView(jTable7);
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(app.ApplicationLauncher.class).getContext().getResourceMap(BitcoinAccountBottomPanel.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(com.moneychanger.app.ApplicationLauncher.class).getContext().getResourceMap(BitcoinAccountBottomPanel.class);
         jTabbedPane1.addTab(resourceMap.getString("jScrollPane14.TabConstraints.tabTitle"), jScrollPane14); // NOI18N
 
         jButton1.setText(resourceMap.getString("jButton1.text")); // NOI18N
@@ -378,13 +378,13 @@ public class BitcoinAccountBottomPanel extends javax.swing.JPanel {
 
         col = jTable6.getColumnModel().getColumn(4);
         col.setPreferredWidth(220);
-        
+
         col = jTable7.getColumnModel().getColumn(0);
         col.setPreferredWidth(360);
-        
+
         col = jTable7.getColumnModel().getColumn(1);
         col.setPreferredWidth(255);
-        
+
         col = jTable7.getColumnModel().getColumn(2);
         col.setPreferredWidth(60);
 

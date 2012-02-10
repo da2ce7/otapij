@@ -3,7 +3,7 @@
 *and open the template in the editor.
  */
 
-package com.wrapper.ui.test;
+package com.moneychanger.ui.test;
 
 /*
  * Christopher Deckers (chrriis@nextencia.net)
@@ -46,7 +46,7 @@ public class SimpleWebBrowserExample extends JPanel {
 
         WebBrowserNavigationParameters parameters = new WebBrowserNavigationParameters();
         Map<String, String> postDataMap = new HashMap<String, String>();
-        
+
         webBrowser.navigate("https://ripplepay.com/login/");
 
         parameters.setPostData(postDataMap);
@@ -69,7 +69,7 @@ public class SimpleWebBrowserExample extends JPanel {
 
   /* Standard main method to try that test as a standalone application. */
   public static void main(String[] args) {
-    
+
     NativeInterface.open();
     SwingUtilities.invokeLater(new Runnable() {
       public void run() {

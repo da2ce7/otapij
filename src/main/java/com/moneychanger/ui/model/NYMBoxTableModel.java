@@ -6,20 +6,20 @@ Hash: SHA256
  *
  *  Open Transactions:
  *       Financial Cryptography and Digital Cash
- *       Library, Protocol, API, Server, and GUI 
- *    
+ *       Library, Protocol, API, Server, and GUI
+ *
  *    	 -- Anonymous Numbered Accounts.
  *    	 -- Untraceable Digital Cash.
  *    	 -- Triple-Signed Receipts.
  *    	 -- Cheques, Vouchers, Transfers, Inboxes.
  *    	 -- Basket Currencies, Markets, Payment Plans.
  *    	 -- Signed, XML, Ricardian-style Contracts.
- *    
+ *
  *  Copyright (C) 2010-2012 by "Fellow Traveler" (A pseudonym)
  *
  *  EMAIL:
  *  FellowTraveler@rayservers.net
- *  
+ *
  *  FINGERPRINT:
  *  9DD5 90EB 9292 4B48 0484  7910 0308 00ED F951 BB8E
  *
@@ -31,10 +31,10 @@ Hash: SHA256
  *
  *  WEBSITE:
  *  http://www.OpenTransactions.org/
- *    
+ *
  *  Components and licensing:
  *   -- Moneychanger..A Java client GUI.....LICENSE:.....GPLv3
- *   -- OTLib.........A class library.......LICENSE:...LAGPLv3 
+ *   -- OTLib.........A class library.......LICENSE:...LAGPLv3
  *   -- OT-API........A client API..........LICENSE:...LAGPLv3
  *   -- testwallet....Command-line client...LICENSE:...LAGPLv3
  *   -- OT-Server.....Server Application....LICENSE:....AGPLv3
@@ -61,14 +61,14 @@ Hash: SHA256
  *   software license, please contact FellowTraveler.
  *   (Unfortunately many will run anonymously and untraceably,
  *   so who could really stop them?)
- *   
+ *
  *   DISCLAIMER:
  *   This program is distributed in the hope that it will be
  *   useful, but WITHOUT ANY WARRANTY; without even the implied
  *   warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *   PURPOSE.  See the GNU General Public License for more
  *   details.
- 
+
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (Darwin)
 
@@ -94,7 +94,7 @@ AK+ZirdWhhoHeWR1tAkN
  * and open the template in the editor.
  */
 
-package com.wrapper.ui.model;
+package com.moneychanger.ui.model;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -123,7 +123,7 @@ public class NYMBoxTableModel extends AbstractTableModel implements WrapperTable
 	    {"TRN19","TRN21","Deposit Cash Receipt","Test address","11/11/2010 12:30:12"}
          * @return
          */
-       
+
         public int getColumnCount() {
             return columnNames.length;
         }
@@ -137,7 +137,7 @@ public class NYMBoxTableModel extends AbstractTableModel implements WrapperTable
         public String getColumnName(int col) {
             return columnNames[col];
         }
-        
+
 public Object getValueAt(int row, int col) {
              if(data==null)
                 return null;
@@ -195,7 +195,7 @@ public Object getValueAt(int row, int col) {
       }
 
       fireTableDataChanged();
-       
+
     }
 
     public void clearValue() {
@@ -235,7 +235,7 @@ public Object getValueAt(int row, int col) {
          nymBox.removeColumn(tcm.getColumn(3));
       }
         fireTableDataChanged();
-     
+
     }
 
 

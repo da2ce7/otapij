@@ -6,20 +6,20 @@ Hash: SHA256
  *
  *  Open Transactions:
  *       Financial Cryptography and Digital Cash
- *       Library, Protocol, API, Server, and GUI 
- *    
+ *       Library, Protocol, API, Server, and GUI
+ *
  *    	 -- Anonymous Numbered Accounts.
  *    	 -- Untraceable Digital Cash.
  *    	 -- Triple-Signed Receipts.
  *    	 -- Cheques, Vouchers, Transfers, Inboxes.
  *    	 -- Basket Currencies, Markets, Payment Plans.
  *    	 -- Signed, XML, Ricardian-style Contracts.
- *    
+ *
  *  Copyright (C) 2010-2012 by "Fellow Traveler" (A pseudonym)
  *
  *  EMAIL:
  *  FellowTraveler@rayservers.net
- *  
+ *
  *  FINGERPRINT:
  *  9DD5 90EB 9292 4B48 0484  7910 0308 00ED F951 BB8E
  *
@@ -31,10 +31,10 @@ Hash: SHA256
  *
  *  WEBSITE:
  *  http://www.OpenTransactions.org/
- *    
+ *
  *  Components and licensing:
  *   -- Moneychanger..A Java client GUI.....LICENSE:.....GPLv3
- *   -- OTLib.........A class library.......LICENSE:...LAGPLv3 
+ *   -- OTLib.........A class library.......LICENSE:...LAGPLv3
  *   -- OT-API........A client API..........LICENSE:...LAGPLv3
  *   -- testwallet....Command-line client...LICENSE:...LAGPLv3
  *   -- OT-Server.....Server Application....LICENSE:....AGPLv3
@@ -61,14 +61,14 @@ Hash: SHA256
  *   software license, please contact FellowTraveler.
  *   (Unfortunately many will run anonymously and untraceably,
  *   so who could really stop them?)
- *   
+ *
  *   DISCLAIMER:
  *   This program is distributed in the hope that it will be
  *   useful, but WITHOUT ANY WARRANTY; without even the implied
  *   warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *   PURPOSE.  See the GNU General Public License for more
  *   details.
- 
+
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (Darwin)
 
@@ -100,17 +100,17 @@ AK+ZirdWhhoHeWR1tAkN
  *
  * Created on 18 Mar, 2011, 7:01:51 PM
  */
-package com.wrapper.ui.panels;
+package com.moneychanger.ui.panels;
 
 import com.wrapper.core.CashPurseAccount;
 import com.wrapper.core.dataobjects.CashPurseDetails;
 import com.wrapper.core.util.Utility;
-import com.wrapper.ui.MainPage;
-import com.wrapper.ui.dialogs.CashPurseDepositDialog;
-import com.wrapper.ui.dialogs.CashPurseExportDetails;
-import com.wrapper.ui.dialogs.CashPurseTokenDetails;
-import com.wrapper.ui.dialogs.ExportCashToDialog;
-import com.wrapper.ui.model.CashPurseTableModel;
+import com.moneychanger.ui.MainPage;
+import com.moneychanger.ui.dialogs.CashPurseDepositDialog;
+import com.moneychanger.ui.dialogs.CashPurseExportDetails;
+import com.moneychanger.ui.dialogs.CashPurseTokenDetails;
+import com.moneychanger.ui.dialogs.ExportCashToDialog;
+import com.moneychanger.ui.model.CashPurseTableModel;
 import java.awt.Cursor;
 import java.util.ArrayList;
 import java.util.Map;
@@ -149,7 +149,7 @@ public class CashPurseAccountBottomPanel extends javax.swing.JPanel {
 
         jScrollPane12.setName("jScrollPane12"); // NOI18N
 
-        jTable5.setModel(new com.wrapper.ui.model.CashPurseTableModel());
+        jTable5.setModel(new com.moneychanger.ui.model.CashPurseTableModel());
         jTable5.setName("jTable5"); // NOI18N
         jTable5.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTable5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -162,7 +162,7 @@ public class CashPurseAccountBottomPanel extends javax.swing.JPanel {
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.setName("jPanel1"); // NOI18N
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(app.ApplicationLauncher.class).getContext().getResourceMap(CashPurseAccountBottomPanel.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(com.moneychanger.app.ApplicationLauncher.class).getContext().getResourceMap(CashPurseAccountBottomPanel.class);
         jButton2.setText(resourceMap.getString("jButton2.text")); // NOI18N
         jButton2.setName("jButton2"); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -267,7 +267,7 @@ public class CashPurseAccountBottomPanel extends javax.swing.JPanel {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         try {
-            
+
             ArrayList selectedIndices = new ArrayList();
             for (int i = 0; i < jTable5.getRowCount(); i++) {
                 String id = (String) jTable5.getModel().getValueAt(i, 3);
@@ -276,7 +276,7 @@ public class CashPurseAccountBottomPanel extends javax.swing.JPanel {
                 }
             }
             System.out.println("selectedIndices:" + selectedIndices);
-            
+
             if(selectedIndices.isEmpty()){
                 int selected = JOptionPane.showConfirmDialog(this, "This will export all of the tokens in the purse", "Warning", JOptionPane.OK_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE);
                 if(selected==2)
@@ -330,7 +330,7 @@ public class CashPurseAccountBottomPanel extends javax.swing.JPanel {
                 }else
                 JOptionPane.showMessageDialog(this, "Error in cash purse exchange", "Server Error", JOptionPane.ERROR_MESSAGE);
     }
-            
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

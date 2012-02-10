@@ -89,7 +89,7 @@ AK+ZirdWhhoHeWR1tAkN
  **************************************************************/
 
 
-package com.wrapper.ui.test;
+package com.moneychanger.ui.test;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -132,7 +132,7 @@ public class HideToSystemTray extends JFrame{
                      repaint();
                      setVisible(true);
                      System.out.println("Open");
-                    
+
                 }
             });
             popup.add(defaultItem);
@@ -184,7 +184,7 @@ public class HideToSystemTray extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     protected void setState() {
-this.setState(JFrame.NORMAL);		
+this.setState(JFrame.NORMAL);
 	}
 	public static void main(String[] args){
         new HideToSystemTray();

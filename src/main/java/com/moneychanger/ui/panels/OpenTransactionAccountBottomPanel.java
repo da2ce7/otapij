@@ -6,20 +6,20 @@ Hash: SHA256
  *
  *  Open Transactions:
  *       Financial Cryptography and Digital Cash
- *       Library, Protocol, API, Server, and GUI 
- *    
+ *       Library, Protocol, API, Server, and GUI
+ *
  *    	 -- Anonymous Numbered Accounts.
  *    	 -- Untraceable Digital Cash.
  *    	 -- Triple-Signed Receipts.
  *    	 -- Cheques, Vouchers, Transfers, Inboxes.
  *    	 -- Basket Currencies, Markets, Payment Plans.
  *    	 -- Signed, XML, Ricardian-style Contracts.
- *    
+ *
  *  Copyright (C) 2010-2012 by "Fellow Traveler" (A pseudonym)
  *
  *  EMAIL:
  *  FellowTraveler@rayservers.net
- *  
+ *
  *  FINGERPRINT:
  *  9DD5 90EB 9292 4B48 0484  7910 0308 00ED F951 BB8E
  *
@@ -31,10 +31,10 @@ Hash: SHA256
  *
  *  WEBSITE:
  *  http://www.OpenTransactions.org/
- *    
+ *
  *  Components and licensing:
  *   -- Moneychanger..A Java client GUI.....LICENSE:.....GPLv3
- *   -- OTLib.........A class library.......LICENSE:...LAGPLv3 
+ *   -- OTLib.........A class library.......LICENSE:...LAGPLv3
  *   -- OT-API........A client API..........LICENSE:...LAGPLv3
  *   -- testwallet....Command-line client...LICENSE:...LAGPLv3
  *   -- OT-Server.....Server Application....LICENSE:....AGPLv3
@@ -61,14 +61,14 @@ Hash: SHA256
  *   software license, please contact FellowTraveler.
  *   (Unfortunately many will run anonymously and untraceably,
  *   so who could really stop them?)
- *   
+ *
  *   DISCLAIMER:
  *   This program is distributed in the hope that it will be
  *   useful, but WITHOUT ANY WARRANTY; without even the implied
  *   warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
  *   PURPOSE.  See the GNU General Public License for more
  *   details.
- 
+
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (Darwin)
 
@@ -98,16 +98,16 @@ AK+ZirdWhhoHeWR1tAkN
  *
  * Created on 18 Mar, 2011, 8:55:00 AM
  */
-package com.wrapper.ui.panels;
+package com.moneychanger.ui.panels;
 
 import com.wrapper.core.OpenTransactionAccount;
 import com.wrapper.core.dataobjects.OTDetails;
 import com.wrapper.core.util.Utility;
-import com.wrapper.ui.MainPage;
-import com.wrapper.ui.dialogs.OTNotes;
-import com.wrapper.ui.model.OTInboxTableModel;
-import com.wrapper.ui.model.OTOutboxTableModel;
-import com.wrapper.ui.model.OTReceiptTableModel;
+import com.moneychanger.ui.MainPage;
+import com.moneychanger.ui.dialogs.OTNotes;
+import com.moneychanger.ui.model.OTInboxTableModel;
+import com.moneychanger.ui.model.OTOutboxTableModel;
+import com.moneychanger.ui.model.OTReceiptTableModel;
 import java.awt.Cursor;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -145,11 +145,11 @@ public class OpenTransactionAccountBottomPanel extends javax.swing.JPanel {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane16 = new javax.swing.JScrollPane();
-        jTable6 = new com.wrapper.ui.custom.CustomTable();
+        jTable6 = new com.moneychanger.ui.custom.CustomTable();
         jButton1 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane14 = new javax.swing.JScrollPane();
-        jTable7 = new com.wrapper.ui.custom.CustomTable();
+        jTable7 = new com.moneychanger.ui.custom.CustomTable();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane15 = new javax.swing.JScrollPane();
         jTable8 = new javax.swing.JTable();
@@ -163,7 +163,7 @@ public class OpenTransactionAccountBottomPanel extends javax.swing.JPanel {
 
         jScrollPane16.setName("jScrollPane16"); // NOI18N
 
-        jTable6.setModel(new com.wrapper.ui.model.OTInboxTableModel());
+        jTable6.setModel(new com.moneychanger.ui.model.OTInboxTableModel());
         jTable6.setName("jTable6"); // NOI18N
         jTable6.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTable6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -173,7 +173,7 @@ public class OpenTransactionAccountBottomPanel extends javax.swing.JPanel {
         });
         jScrollPane16.setViewportView(jTable6);
 
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(app.ApplicationLauncher.class).getContext().getResourceMap(OpenTransactionAccountBottomPanel.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(com.moneychanger.app.ApplicationLauncher.class).getContext().getResourceMap(OpenTransactionAccountBottomPanel.class);
         jButton1.setText(resourceMap.getString("jButton1.text")); // NOI18N
         jButton1.setName("jButton1"); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -207,7 +207,7 @@ public class OpenTransactionAccountBottomPanel extends javax.swing.JPanel {
 
         jScrollPane14.setName("jScrollPane14"); // NOI18N
 
-        jTable7.setModel(new com.wrapper.ui.model.OTOutboxTableModel());
+        jTable7.setModel(new com.moneychanger.ui.model.OTOutboxTableModel());
         jTable7.setName("jTable7"); // NOI18N
         jTable7.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTable7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -236,7 +236,7 @@ public class OpenTransactionAccountBottomPanel extends javax.swing.JPanel {
 
         jScrollPane15.setName("jScrollPane15"); // NOI18N
 
-        jTable8.setModel(new com.wrapper.ui.model.OTReceiptTableModel());
+        jTable8.setModel(new com.moneychanger.ui.model.OTReceiptTableModel());
         jTable8.setName("jTable8");
         jTable8.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jScrollPane15.setViewportView(jTable8);

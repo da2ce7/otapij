@@ -2,7 +2,7 @@
  *To change this template, choose Tools | Templates
  *and open the template in the editor.
  */
-package com.wrapper.ui.panels;
+package com.moneychanger.ui.panels;
 
 /*
  * Christopher Deckers (chrriis@nextencia.net)
@@ -37,7 +37,7 @@ public class WebBrowserPanel extends JPanel {
         final JWebBrowser webBrowser = new JWebBrowser();
         WebBrowserNavigationParameters parameters = new WebBrowserNavigationParameters();
         Map<String, String> postDataMap = new HashMap<String, String>();
-        
+
         postDataMap.put(usernameID, username);
         postDataMap.put(passwordID, password);
         parameters.setPostData(postDataMap);

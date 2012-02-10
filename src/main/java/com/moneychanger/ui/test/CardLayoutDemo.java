@@ -29,7 +29,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.wrapper.ui.test;
+package com.moneychanger.ui.test;
 
 /*
  * CardLayoutDemo.java
@@ -65,7 +65,7 @@ public class CardLayoutDemo{
         gb.setConstraints(pane, gc);
         gc.gridx=0;
         gc.gridy=0;
- 
+
 
         //Create the "cards".
         JPanel card1 = new JPanel(gb);
@@ -99,8 +99,8 @@ public class CardLayoutDemo{
         cards.add(card2,"2");
 
         JButton tst =new JButton("click");
-        
-        
+
+
         tst.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
@@ -140,7 +140,7 @@ public class CardLayoutDemo{
             Date d = new Date(l);
                   Calendar c = Calendar.getInstance();
                   c.setTimeInMillis(l);
-      
+
             UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
         } catch (UnsupportedLookAndFeelException ex) {
             ex.printStackTrace();
