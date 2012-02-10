@@ -110,7 +110,7 @@ import org.jvnet.substance.skin.SubstanceSaharaLookAndFeel;
 /**
  * The main class of the application.
  */
-public class ApplicationLauncher extends SingleFrameApplication {
+public class LaunchMoneychanger extends SingleFrameApplication {
 
     /**
      * At startup create and show the main frame of the application.
@@ -146,7 +146,7 @@ public class ApplicationLauncher extends SingleFrameApplication {
 
 
         } catch (Exception ex) {
-            Logger.getLogger(ApplicationLauncher.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(LaunchMoneychanger.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -161,10 +161,10 @@ public class ApplicationLauncher extends SingleFrameApplication {
 
     /**
      * A convenient static getter for the application instance.
-     * @return the instance of ApplicationLauncher
+     * @return the instance of LaunchMoneychanger
      */
-    public static ApplicationLauncher getApplication() {
-        return Application.getInstance(ApplicationLauncher.class);
+    public static LaunchMoneychanger getApplication() {
+        return Application.getInstance(LaunchMoneychanger.class);
     }
 
     /**
@@ -172,6 +172,6 @@ public class ApplicationLauncher extends SingleFrameApplication {
      */
     public static void main(String[] args) throws UnsupportedLookAndFeelException {
 
-        launch(ApplicationLauncher.class, args);
+        launch(LaunchMoneychanger.class, args);
     }
 }

@@ -260,7 +260,7 @@ public class MainPage extends javax.swing.JFrame {
             System.out.println("system tray supported");
             tray = SystemTray.getSystemTray();
 
-            ImageIcon image1 = new javax.swing.ImageIcon(getClass().getResource("/com/wrapper/ui/images/images.jpeg"));
+            ImageIcon image1 = new javax.swing.ImageIcon(getClass().getResource("/com/moneychanger/ui/images/images.jpeg"));
             image = image1.getImage();
             ActionListener exitListener = new ActionListener() {
 
@@ -713,7 +713,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel16.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel16.setName("jPanel16"); // NOI18N
 
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/wrapper/ui/images/pencil.jpg"))); // NOI18N
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/moneychanger/ui/images/pencil.jpg"))); // NOI18N
         jButton10.setText(resourceMap.getString("jButton10.text")); // NOI18N
         jButton10.setToolTipText(resourceMap.getString("jButton10.toolTipText")); // NOI18N
         jButton10.setName("jButton10"); // NOI18N
@@ -908,7 +908,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel10.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel10.setName("jPanel10"); // NOI18N
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/wrapper/ui/images/pencil.jpg"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/moneychanger/ui/images/pencil.jpg"))); // NOI18N
         jButton4.setText(resourceMap.getString("jButton4.text")); // NOI18N
         jButton4.setToolTipText(resourceMap.getString("jButton4.toolTipText")); // NOI18N
         jButton4.setName("jButton4"); // NOI18N
@@ -1256,7 +1256,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel13.setName("jPanel13"); // NOI18N
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/wrapper/ui/images/pencil.jpg"))); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/moneychanger/ui/images/pencil.jpg"))); // NOI18N
         jButton7.setText(resourceMap.getString("jButton7.text")); // NOI18N
         jButton7.setName("jButton7"); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -1376,7 +1376,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel17.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel17.setName("jPanel17"); // NOI18N
 
-        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/wrapper/ui/images/pencil.jpg"))); // NOI18N
+        jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/moneychanger/ui/images/pencil.jpg"))); // NOI18N
         jButton13.setText(resourceMap.getString("jButton13.text")); // NOI18N
         jButton13.setToolTipText(resourceMap.getString("jButton13.toolTipText")); // NOI18N
         jButton13.setName("jButton13"); // NOI18N
@@ -1562,7 +1562,7 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
 
-        jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/wrapper/ui/images/pencil.jpg"))); // NOI18N
+        jButton32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/moneychanger/ui/images/pencil.jpg"))); // NOI18N
         jButton32.setToolTipText(resourceMap.getString("jButton32.toolTipText")); // NOI18N
         jButton32.setName("jButton32"); // NOI18N
         jButton32.addActionListener(new java.awt.event.ActionListener() {
@@ -2406,7 +2406,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel25.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel25.setName("jPanel25"); // NOI18N
 
-        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/wrapper/ui/images/pencil.jpg"))); // NOI18N
+        jButton19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/moneychanger/ui/images/pencil.jpg"))); // NOI18N
         jButton19.setToolTipText(resourceMap.getString("jButton19.toolTipText")); // NOI18N
         jButton19.setName("jButton19"); // NOI18N
         jButton19.addActionListener(new java.awt.event.ActionListener() {
@@ -2472,7 +2472,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel26.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel26.setName("jPanel26"); // NOI18N
 
-        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/wrapper/ui/images/pencil.jpg"))); // NOI18N
+        jButton22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/moneychanger/ui/images/pencil.jpg"))); // NOI18N
         jButton22.setToolTipText(resourceMap.getString("jButton22.toolTipText")); // NOI18N
         jButton22.setName("jButton22"); // NOI18N
         jButton22.addActionListener(new java.awt.event.ActionListener() {

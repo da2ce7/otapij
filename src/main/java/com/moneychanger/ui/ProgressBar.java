@@ -1,6 +1,6 @@
 package com.moneychanger.ui;
 
-import com.moneychanger.app.ApplicationLauncher;
+import com.moneychanger.app.LaunchMoneychanger;
 import chrriis.dj.nativeswing.swtimpl.EventDispatchUtils;
 import com.wrapper.core.util.Utility;
 import java.awt.*;
